@@ -1,0 +1,29 @@
+name: crawl-lab
+
+services:
+  dcss:
+    image: ghcr.io/nkhoit/dcss-webtiles:0.34.0@sha256:80e8810aaed15093eeab0656773bb459b865adceadccd0df052a90be66a6c7e7
+    platform: linux/amd64
+    environment:
+      LANG: C.UTF-8
+      LC_ALL: C.UTF-8
+      CRAWL_DIR: /data/saves/
+    ports:
+      - "127.0.0.1:8080:8080"
+    volumes:
+      - dcss-data:/data
+      - ./config/init.txt:/app/settings/init.txt:ro
+    restart: "no"
+    healthcheck:
+      test:
+        - CMD
+        - python3
+        - -c
+        - "import urllib.request; urllib.request.urlopen('http://127.0.0.1:8080/', timeout=3).close()"
+      interval: 10s
+      timeout: 5s
+      retries: 6
+      start_period: 15s
+
+volumes:
+  dcss-data:

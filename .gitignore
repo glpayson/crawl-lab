@@ -1,0 +1,15 @@
+# Local working plan and Task Space metadata.
+/PLAN.md
+/.space/
+
+# Local credentials/configuration; examples can be shared.
+.env
+.env.*
+!.env.example
+
+# Runtime data and manual backups do not belong in Git.
+/data/
+/backups/
+
+# macOS metadata.
+.DS_Store

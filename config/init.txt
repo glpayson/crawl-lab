@@ -1,0 +1,3 @@
+# Default RC for new local accounts.
+# Storage is set by CRAWL_DIR in compose.yaml.
+# This DGAMELAUNCH build ignores save_dir in player RC files.
