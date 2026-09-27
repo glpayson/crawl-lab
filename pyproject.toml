@@ -1,0 +1,15 @@
+[project]
+name = "crawl-lab"
+version = "0.1.0"
+description = "A lab for experimenting with AI decision backends that play Dungeon Crawl Stone Soup"
+readme = "README.md"
+requires-python = ">=3.14"
+dependencies = []
+
+[dependency-groups]
+dev = [
+    "httpx>=0.28.1",
+    "mypy>=2.3.1",
+    "pytest>=9.1.1",
+    "ruff>=0.16.9",
+]
