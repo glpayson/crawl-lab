@@ -1,0 +1,102 @@
+[
+  {
+    "msg": "version",
+    "text": "Dungeon Crawl Stone Soup 0.34.0"
+  },
+  {
+    "msg": "ui-push",
+    "type": "newgame-choice",
+    "main-items": {
+      "menu_id": "species-main",
+      "buttons": [
+        {
+          "hotkey": 98,
+          "labels": [
+            "<lightgrey>b - Minotaur"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "msg": "player",
+    "name": "",
+    "wizard": 0,
+    "explore": 0,
+    "species": "Yak",
+    "hp": 0,
+    "hp_max": 0,
+    "xl": 1,
+    "turn": 0,
+    "place": "Dungeon",
+    "depth": 0,
+    "pos": {
+      "x": 0,
+      "y": 0
+    }
+  },
+  {
+    "msg": "ui-push",
+    "type": "newgame-choice",
+    "main-items": {
+      "menu_id": "background-main",
+      "buttons": [
+        {
+          "hotkey": 102,
+          "labels": [
+            "<white>f - Berserker"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "msg": "ui-push",
+    "type": "newgame-choice",
+    "main-items": {
+      "menu_id": "weapon-main",
+      "buttons": [
+        {
+          "hotkey": 98,
+          "labels": [
+            "<white> b - mace       ",
+            "<white>(+2 apt)"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "msg": "player",
+    "name": "TestPlayer",
+    "species": "Minotaur",
+    "hp": 19,
+    "hp_max": 19,
+    "depth": 1
+  },
+  {
+    "msg": "map",
+    "clear": true,
+    "cells": []
+  },
+  {
+    "msg": "input_mode",
+    "mode": 1
+  },
+  {
+    "msg": "map",
+    "clear": false,
+    "cells": []
+  },
+  {
+    "msg": "input_mode",
+    "mode": 0
+  },
+  {
+    "reason": "saved",
+    "msg": "game_ended"
+  },
+  {
+    "msg": "go_lobby"
+  }
+]
